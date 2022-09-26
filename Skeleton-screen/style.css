@@ -1,0 +1,54 @@
+.loading {
+  background-image: linear-gradient(90deg, #23b9ff, #a0ffd9, #23b9ff, #a0ffd9);
+  background-size: 1000%;
+  background-position: right;
+  border-radius: 20px;
+  width: 150px;
+  height: 15px;
+  animation: sweep 5s ease-in-out infinite alternate;
+  box-shadow: 0 0 6px 0 #a3a3a331;
+}
+@keyframes sweep {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.username.loading {
+  width: 250px;
+}
+
+.followers.loading,
+.following.loading {
+  width: 150px;
+}
+
+.repositories.loading {
+  width: 200px;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.profile-image,
+.username {
+  margin-bottom: 1rem;
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
